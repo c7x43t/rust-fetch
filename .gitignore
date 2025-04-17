@@ -34,3 +34,4 @@ pkgs/create-neon/create-neon-manual-test-project
 cargo.log
 *.lock
 Cargo.lock
+yarn.lock
