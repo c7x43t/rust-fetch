@@ -1,0 +1,23 @@
+{
+  "name": "@valentech/rust-fetch",
+  "version": "0.1.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "cargo-build": "cargo build --message-format=json-render-diagnostics > cargo.log",
+    "cross-build": "cross build --message-format=json-render-diagnostics > cross.log",
+    "postcargo-build": "neon dist < cargo.log",
+    "postcross-build": "neon dist -m /target < cross.log",
+    "debug": "npm run cargo-build --",
+    "bench": "/usr/bin/time -f \"Peak memory: %M KB\" node ./bench.js",
+    "build": "npm run cargo-build -- --release",
+    "cross": "npm run cross-build -- --release"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@neon-rs/cli": "0.1.82"
+  }
+}
