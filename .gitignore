@@ -31,3 +31,6 @@ pkgs/create-neon/create-neon-manual-test-project
 # System
 **/.DS_Store
 *.log
+cargo.log
+*.lock
+Cargo.lock
