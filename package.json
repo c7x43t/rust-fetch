@@ -1,6 +1,6 @@
 {
   "name": "@valentech/rust-fetch",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "",
   "type": "commonjs",
   "main": "index.js",
@@ -18,7 +18,7 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@neon-rs/cli": "0.1.82"
   }
 }
