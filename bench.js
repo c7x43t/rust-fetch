@@ -1,4 +1,5 @@
 const { rustFetch } = require('./rustFetch');
+// const rustFetch = fetch;
 async function bench() {
     try {
         let resps = []
