@@ -1,6 +1,6 @@
 {
   "name": "@valentech/rust-fetch",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "type": "commonjs",
   "main": "index.js",
@@ -13,7 +13,8 @@
     "debug": "npm run cargo-build --",
     "bench": "/usr/bin/time -f \"Peak memory: %M KB\" node ./bench.js",
     "build": "npm run cargo-build -- --release",
-    "cross": "npm run cross-build -- --release"
+    "cross": "npm run cross-build -- --release",
+    "postinstall": "neon build --release"
   },
   "author": "",
   "license": "ISC",
