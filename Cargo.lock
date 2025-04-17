@@ -998,18 +998,6 @@ dependencies = [
 
 [[package]]
 name = "reqwest"
-version = "0.1.0"
-dependencies = [
- "futures",
- "neon",
- "once_cell",
- "reqwest 0.12.15",
- "smol_str",
- "tokio",
-]
-
-[[package]]
-name = "reqwest"
 version = "0.12.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d19c46a6fdd48bc4dab94b6103fccc55d34c67cc0ad04653aad4ea2a07cd7bbb"
@@ -1071,6 +1059,18 @@ dependencies = [
  "libc",
  "untrusted",
  "windows-sys 0.52.0",
+]
+
+[[package]]
+name = "rust-fetch"
+version = "0.1.0"
+dependencies = [
+ "futures",
+ "neon",
+ "once_cell",
+ "reqwest",
+ "smol_str",
+ "tokio",
 ]
 
 [[package]]
